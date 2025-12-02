@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallel Maze Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Parallel Maze Solver</h1>
+    <div id="controls">
+      <label>Step 1: Choose Maze</label>
+      <select id="maze-choice">
+        <option value="random">Random</option>
+        <option value="upload">Upload</option>
+        <option value="draw">Draw</option>
+      </select>
+      <br>
+      <label>Step 2: Choose Algorithm</label>
+      <select id="algorithm-choice">
+        <option value="bfs">BFS</option>
+        <option value="dfs">DFS</option>
+        <option value="dijkstra">Dijkstra</option>
+        <option value="astar">A*</option>
+      </select>
+      <br>
+      <label>Step 3: Choose Mode</label>
+      <select id="mode-choice">
+        <option value="sequential">Sequential</option>
+        <option value="parallel">Parallel</option>
+      </select>
+      <br>
+      <button id="start-btn">Start</button>
+    </div>
+    <div id="visualization"></div>
+    <div id="comparison"></div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
